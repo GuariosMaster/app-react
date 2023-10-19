@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Archivo App.css */
+.app {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Divide en dos columnas, la primera más estrecha y la segunda más ancha */
+  grid-template-rows: auto 1fr auto; /* Divide en tres filas: encabezado, contenido, pie de página */
+
+  height: 100vh; /* Establece la altura al 100% del viewport */
+}
+
+.navbar {
+  grid-column: 1 / 3; /* Ocupa las dos columnas */
+  background: #3498db;
+  
+  padding: 1rem;
+}
+
+.sidebar {
+  background: #2ecc71;
+ 
+  padding: 1rem;
+}
+
+.content {
+  grid-column: 2 / 3; /* Ocupa la segunda columna */
+  background: #f1c40f;
+  padding: 1rem;
+}
+
+.footer {
+  grid-column: 1 / 3; /* Ocupa las dos columnas */
+  background: #e74c3c;
+ 
+  padding: 1rem;
+}
