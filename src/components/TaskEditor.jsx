@@ -7,7 +7,7 @@ class TaskEditor extends Component {
     }
   
     handleUpdate = () => {
-      this.props.onUpdate({ ...this.props.task, text: this.state.text });
+      this.props.onUpdate({...this.props.task, text: this.state.text });
     };
   
     render() {

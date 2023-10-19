@@ -5,6 +5,7 @@ import TaskAdder from './components/TaskAdder';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Aside from './components/Aside';
+import VideoPlayer from './components/VideoPlayer';
 
 
 class App extends Component {
@@ -59,7 +60,7 @@ class App extends Component {
             </aside>
             <main className="content">
                 <h1 className="text-center mt-5">Administración de Tareas</h1>
-                    <div className='col'>
+                    <div className='row'>
 
                         <h1>Lista de Tareas</h1>
                         <div>
@@ -76,6 +77,8 @@ class App extends Component {
                             />
                             )}
                             <TaskAdder onAdd={this.handleAdd} />
+                            <VideoPlayer />
+
                         </div>
                     
                     </div>
